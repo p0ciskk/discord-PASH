@@ -1,0 +1,1246 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 148,
+      "y": 188
+    },
+    {
+      "type": "command",
+      "name": "info",
+      "guid": "2224944a-561a-4fa1-824b-2f31ea37c836",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "77d6a898-62d7-4607-9ac9-4ff292971ef6"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 149,
+      "y": 325
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "!help",
+          "value": "Show help menu",
+          "inline": "true"
+        },
+        {
+          "name": "!info",
+          "value": "Shows some info",
+          "inline": "true"
+        }
+      ],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 345,
+      "y": 182,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1FFF57",
+        "Pomoc",
+        "",
+        "p0cisK Helps",
+        "",
+        "",
+        "bot commands:\n!kick\n!ban\n!media\n!info\n!help\n!unban",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Kolorek",
+      "guid": "77d6a898-62d7-4607-9ac9-4ff292971ef6",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "e0a58cf8-8ddb-404d-bf81-b3818a931eb6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2224944a-561a-4fa1-824b-2f31ea37c836"
+        }
+      ],
+      "x": 330,
+      "y": 326,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "kolor",
+      "guid": "e0a58cf8-8ddb-404d-bf81-b3818a931eb6",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "a4204c8b-b720-424f-961d-e4e37529f25a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "77d6a898-62d7-4607-9ac9-4ff292971ef6"
+        }
+      ],
+      "x": 514,
+      "y": 334,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "embedzik",
+      "guid": "a4204c8b-b720-424f-961d-e4e37529f25a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e0a58cf8-8ddb-404d-bf81-b3818a931eb6"
+        }
+      ],
+      "x": 722,
+      "y": 338,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00FFE5",
+        "info",
+        "",
+        "p0cisK info menu",
+        "",
+        "",
+        "Serwer ma autorskiego bota \npomocną administracije\nrozwinięte kanały\njeśli czegoś potrzebujesz to wal smiało na chacie lub na pv do admina\nbot serwera będzie cały czas updatowany.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "media",
+      "guid": "8141b5f4-bac1-4bb9-a371-c2111a995f2c",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "b3b2b16d-332c-42b3-a7e7-8cffbdae04b9"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 238,
+      "y": 656
+    },
+    {
+      "type": "response",
+      "name": "Menupart1",
+      "guid": "b3b2b16d-332c-42b3-a7e7-8cffbdae04b9",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f07bce66-c99e-40e2-b17b-576c2f37cef6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8141b5f4-bac1-4bb9-a371-c2111a995f2c"
+        }
+      ],
+      "x": 428,
+      "y": 654,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "menupart2",
+      "guid": "f07bce66-c99e-40e2-b17b-576c2f37cef6",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "cde15d30-b22c-4dc5-ba28-08f2fa0f2a6f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b3b2b16d-332c-42b3-a7e7-8cffbdae04b9"
+        }
+      ],
+      "x": 640,
+      "y": 642,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "menupart3",
+      "guid": "cde15d30-b22c-4dc5-ba28-08f2fa0f2a6f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f07bce66-c99e-40e2-b17b-576c2f37cef6"
+        }
+      ],
+      "x": 818,
+      "y": 658,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Media ",
+        "",
+        "p0cisK Media Menu",
+        "",
+        "",
+        "gmail:p0ciskkontakt@gmail.com\ntiktok:https://www.tiktok.com/@p0cisk_",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "kick",
+      "guid": "651fc16d-62d7-4e4b-92cc-74bfd2d285c8",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "65af2422-02c2-4a50-8815-105bab7e5ae1"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 6,
+      "y": 1458
+    },
+    {
+      "type": "response",
+      "name": "Sprawdzanie uprawnien",
+      "guid": "65af2422-02c2-4a50-8815-105bab7e5ae1",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": [
+            "215efcce-4e68-4911-8c64-2c4c1f827ffd"
+          ]
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": [
+            "d1715f27-07d4-41ab-8d60-50e66af2372b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "651fc16d-62d7-4e4b-92cc-74bfd2d285c8"
+        }
+      ],
+      "x": 164,
+      "y": 1406,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "Brak uprawnien",
+      "guid": "d1715f27-07d4-41ab-8d60-50e66af2372b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "65af2422-02c2-4a50-8815-105bab7e5ae1"
+        }
+      ],
+      "x": 330,
+      "y": 1534,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Nie masz wystarczających uprawnień",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "osoba do kick",
+      "guid": "215efcce-4e68-4911-8c64-2c4c1f827ffd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "1c9c5f34-4386-4bd7-834b-5204e609a33a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "65af2422-02c2-4a50-8815-105bab7e5ae1"
+        }
+      ],
+      "x": 326,
+      "y": 1410,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "osoba_do_kick",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "powód_kick",
+      "guid": "1c9c5f34-4386-4bd7-834b-5204e609a33a",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "powód",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "93cab87d-7dd8-4f9f-bf21-5facab29b952"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "215efcce-4e68-4911-8c64-2c4c1f827ffd"
+        }
+      ],
+      "x": 484,
+      "y": 1412,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "powód",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wyrzuć osobe",
+      "guid": "93cab87d-7dd8-4f9f-bf21-5facab29b952",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "36d5b95b-9b41-4408-849b-9324a6e30a55"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1c9c5f34-4386-4bd7-834b-5204e609a33a"
+        }
+      ],
+      "x": 490,
+      "y": 1546,
+      "rtype": "User Action",
+      "rsubtype": "Kick User",
+      "formdata": [
+        "${tempVars.osoba_do_kick.id}",
+        "${tempVars.powód}"
+      ],
+      "formnames": [
+        "user",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "kick msg",
+      "guid": "36d5b95b-9b41-4408-849b-9324a6e30a55",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "93cab87d-7dd8-4f9f-bf21-5facab29b952"
+        }
+      ],
+      "x": 662,
+      "y": 1476,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Kick",
+        "",
+        "p0cisK Kick Menu",
+        "",
+        "",
+        "osoba wyrzucona:${tempVars.osoba_do_kick.user.tag}\nPowód${tempVars.powód}\nAdministrator:${dbsVars.CommandAuthor.user.tag}",
+        "${tempVars.osoba_do_kick.user.avatarURL}",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "ban",
+      "guid": "1fa27ffb-fbb2-467d-a6e3-049ac24cd94e",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "0e1ec641-d895-4fcb-9faf-6fbfa63fbcf9"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 12,
+      "y": 2350
+    },
+    {
+      "type": "response",
+      "name": "Sprawdzanie uprawnien_1",
+      "guid": "0e1ec641-d895-4fcb-9faf-6fbfa63fbcf9",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": [
+            "7335318b-4f42-47d6-9e4e-e8a9d2390cc4"
+          ]
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": [
+            "bed20ba8-582d-4b54-938c-35df62528642"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1fa27ffb-fbb2-467d-a6e3-049ac24cd94e"
+        }
+      ],
+      "x": 14,
+      "y": 2180,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        [
+          "BAN_MEMBERS"
+        ]
+      ],
+      "formnames": [
+        "user",
+        "permissions"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Brak uprawnien_1",
+      "guid": "bed20ba8-582d-4b54-938c-35df62528642",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0e1ec641-d895-4fcb-9faf-6fbfa63fbcf9"
+        }
+      ],
+      "x": 174,
+      "y": 2320,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "Nie masz wystarczających uprawnień",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "user_to_ban",
+      "guid": "7335318b-4f42-47d6-9e4e-e8a9d2390cc4",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "818145cd-6695-4851-90cf-d9b3b9782219"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0e1ec641-d895-4fcb-9faf-6fbfa63fbcf9"
+        }
+      ],
+      "x": 180,
+      "y": 2192,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "userban",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "powód_kick_1",
+      "guid": "b5e06dff-003a-4ad1-be3f-0eb8fccf7536",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "powód",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f74f6700-a0f7-4ec6-8e7f-cd0f46b80385"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "818145cd-6695-4851-90cf-d9b3b9782219"
+        }
+      ],
+      "x": 382,
+      "y": 2346,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "powód",
+        "Text",
+        "temp",
+        "3+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ilosc_dni",
+      "guid": "818145cd-6695-4851-90cf-d9b3b9782219",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ilosc dni",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b5e06dff-003a-4ad1-be3f-0eb8fccf7536"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7335318b-4f42-47d6-9e4e-e8a9d2390cc4"
+        }
+      ],
+      "x": 376,
+      "y": 2206,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "ilosc dni",
+        "Number",
+        "temp",
+        "2"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "zbanuj",
+      "guid": "f74f6700-a0f7-4ec6-8e7f-cd0f46b80385",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b7a95f78-7203-45eb-910b-cf3bdcce4905"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b5e06dff-003a-4ad1-be3f-0eb8fccf7536"
+        }
+      ],
+      "x": 552,
+      "y": 2212,
+      "rtype": "User Action",
+      "rsubtype": "Ban User",
+      "formdata": [
+        "${tempVars.userban.id}",
+        "${tempVars.powód}",
+        "${tempVars.ilosc dni}"
+      ],
+      "formnames": [
+        "user",
+        "reason",
+        "days"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ban msg",
+      "guid": "b7a95f78-7203-45eb-910b-cf3bdcce4905",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f74f6700-a0f7-4ec6-8e7f-cd0f46b80385"
+        }
+      ],
+      "x": 554,
+      "y": 2358,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Zbanowany",
+        "",
+        "p0cisK_ ban menu",
+        "",
+        "",
+        "zbanowany:${tempVars.userban.user.tag}\npowód${tempVars.powód}\nilosc dni bana:${tempVars.ilosc dni}\nAdmin:${dbsVars.CommandAuthor.user.tag}",
+        "${tempVars.userban.user.avatarURL}",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "mute",
+      "guid": "cf8a4f16-e559-48ad-846e-4d4f443b6342",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "62becdad-83f2-4241-b031-3502c977151a"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 4,
+      "y": 2666
+    },
+    {
+      "type": "response",
+      "name": "getusertomute",
+      "guid": "0c98d248-e482-4e9c-9dc4-1ee9a3b6b3ac",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "11da180b-8e24-4755-b7c7-5c5deeee7869"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "62becdad-83f2-4241-b031-3502c977151a"
+        }
+      ],
+      "x": 610,
+      "y": 2632,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "usertomute",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "getreasontomute",
+      "guid": "11da180b-8e24-4755-b7c7-5c5deeee7869",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ReasontoMute",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "176ef9e1-b597-45fb-81b4-359fa3235589"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0c98d248-e482-4e9c-9dc4-1ee9a3b6b3ac"
+        }
+      ],
+      "x": 762,
+      "y": 2630,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "ReasontoMute",
+        "Text",
+        "temp",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "infotouser",
+      "guid": "176ef9e1-b597-45fb-81b4-359fa3235589",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "6e19c98a-657b-4dad-83eb-6184dfe1e682"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "11da180b-8e24-4755-b7c7-5c5deeee7869"
+        }
+      ],
+      "x": 918,
+      "y": 2638,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "Mute",
+        "",
+        "p0cisk_ mute menu",
+        "",
+        "",
+        "Zostałeś Zmutowany!",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "logstomute",
+      "guid": "6e19c98a-657b-4dad-83eb-6184dfe1e682",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c09994d3-8108-40ce-8135-6f834c44510a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "176ef9e1-b597-45fb-81b4-359fa3235589"
+        }
+      ],
+      "x": 1072,
+      "y": 2638,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "admin-chat",
+        "FF0000",
+        "Mute",
+        "",
+        "p0cisk_ mute menu",
+        "",
+        "",
+        "Użytkownik:<@${tempVars.usertomute.id}>\nmoderator:<@${dbsVars.CommandAuthor.id}>\npowód:${tempVars.ReasontoMute}",
+        "${tempVars.usertomute.user.avatarURL}",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "mutenowe",
+      "guid": "c09994d3-8108-40ce-8135-6f834c44510a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6e19c98a-657b-4dad-83eb-6184dfe1e682"
+        }
+      ],
+      "x": 1228,
+      "y": 2642,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.usertomute.id}",
+        "mute-role"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "checpermissions",
+      "guid": "62becdad-83f2-4241-b031-3502c977151a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": [
+            "0c98d248-e482-4e9c-9dc4-1ee9a3b6b3ac"
+          ]
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": [
+            "4b7c656b-1b1b-4cb6-95ef-84966599cee8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "cf8a4f16-e559-48ad-846e-4d4f443b6342"
+        }
+      ],
+      "x": 178,
+      "y": 2628,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "formdata": [
+        "${dbsVars.CommandAuthor.id}",
+        [
+          "MUTE_MEMBERS"
+        ]
+      ],
+      "formnames": [
+        "user",
+        "permissions"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ErrorMute",
+      "guid": "4b7c656b-1b1b-4cb6-95ef-84966599cee8",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "62becdad-83f2-4241-b031-3502c977151a"
+        }
+      ],
+      "x": 340,
+      "y": 2762,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF0000",
+        "ERROR",
+        "",
+        "p0cisK_ Menu mute",
+        "",
+        "",
+        "Nie masz permisij do tej komendy",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    }
+  ]
+}
